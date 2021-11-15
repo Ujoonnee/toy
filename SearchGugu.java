@@ -1,10 +1,12 @@
-import javax.swing.JOptionPane;
+import java.util.Scanner;
 
 public class SearchGugu {
 
   public static void main(String[] args){
-  
-    int x = Integer.parseInt(JOptionPane.showInputDialog("Table number?"));
+
+    System.out.println("몇 단?");
+    Scanner input = new Scanner(System.in);
+    int x = input.nextInt();
     int y = 1;
 
       System.out.println(x+"단");
