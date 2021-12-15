@@ -1,0 +1,237 @@
+* {
+    font-family: 궁서, serif, monospace;
+}
+
+.head p {
+    color: #00ff00;
+    font-size: 16;
+    font-style: oblique 14deg;
+}
+
+li {
+    display: block;
+    /* block, inline, inline-block etc */
+}
+
+li::first-letter {
+    font-size: 40px;
+    color: coral;
+}
+
+li::marker {
+    color: red;
+    font-size: 30px;
+}
+
+ul {
+    text-align: right;
+    color: rgba(255, 136, 0, 0.466);
+}
+
+.title {
+    text-align: center;
+    font-size: xx-large;
+    color: steelblue;
+}
+
+#break {
+    border: 5px dashed cyan;
+}
+
+#list {
+    font-size: 2rem;
+}
+
+#strong {
+    font-size: 2em;
+}
+
+#strong::before {
+    content: "strong tag makes " ;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+#img {
+    box-sizing: border-box;
+    width: 500; 
+    height: 300;
+    padding:20px;
+    margin:40px;
+    border: blue 2px solid;
+    /* background-color: grey; */
+    background-image: url("https://bit.ly/3oOMQbL");
+    background-repeat: no-repeat;
+    background-position: center; /* lrtbc or xy*/
+    background-size: contain;
+    /* cover : 비율 유지하며 확대, contain : cover + 안짤리게 */
+
+    filter: drop-shadow(30px 10px 4px #4444dd);
+}
+
+#naver {
+    position: sticky;
+    top: 50px;
+}
+#input{
+    /* border-box는 이후 지정하는 padding, margin이 전체 박스의 크기를 지정하므로, content의 크기가 작아짐. default는 content-box. */
+    box-sizing: border-box;
+
+    /* 
+    패딩과 마진을 지정할 때 적는 갯수에 따라 적용 방향이 다름
+    10px : 상하좌우
+    10px 10px : 상하/좌우
+    10px 10px 10px : 상 / 좌우 / 하
+    10px 10px 10px 10px : 상 부터 시계방향
+    */
+    padding: 20px;
+    margin: 20px;
+    border: solid red 5px;
+}
+
+[type="button"]:active {
+    background-color: darkslateblue;
+    color: wheat;
+}
+
+textarea:focus {
+    background-color: #e6e6e6;
+    width: 200;
+    height: 100;
+}
+
+textarea::placeholder {
+    font-size: 25px;
+}
+
+.floatA {
+    width: 100;
+    height: 100;
+    background-color: orange;
+    float: left;
+}
+
+.floatB {
+    width: 200;
+    height: 50;
+    background-color: rebeccapurple;
+    float: right;
+}
+
+.floatC{
+    clear: right;
+    /* clear: both; */
+}
+
+.sticky{
+    border: rgb(109, 163, 29) solid 2px;
+    width: 120;
+    height: 60;
+    position: sticky;
+    top: 50;
+    bottom: 50;
+    z-index: 0;
+}
+
+.fixed {
+    border: red dotted 2px;
+    width: 30;
+    height: 100;
+    position: fixed;
+    bottom: 50;
+    right: 30;
+}
+
+.relative {
+    border: black solid 2px;
+    background-color: blue;
+    width: 300;
+    height: 300;
+    position: relative;
+    top: 100;
+    left: 70;
+    z-index: 1;
+}
+
+#rel {
+    border: red 5px;
+    background-color: crimson;
+    width: 70;
+    height: 80;
+    position: relative;
+    top: 30;
+    left: 170;
+}
+
+#abs {
+    border: red 5px;
+    background-color: crimson;
+    width: 70;
+    height: 80;
+    position: absolute;
+    top: 30;
+    left: 170;
+}
+
+.flex {
+    display: inline-flex;
+    border: solid black;
+    width: 220;
+    height: 220;
+}
+
+#flexCol {
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#item {
+    border: solid black 2px;
+    background-color: tomato;
+    width: 30;
+    height: 30;
+}
+
+#flexRecol {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+#flexRow {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.self {
+    align-self:flex-start;
+}
+
+#flexReRow {
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#wrap {
+    flex-wrap: wrap;
+}
+
+#wrappedItem {
+    border: solid black 2px;
+    background-color: tomato;
+    width: 100;
+    height: 30;
+}
+
+#wrappedItem:nth-child(2n-1) {
+    border: solid black 2px;
+    background-color: powderblue;
+    width: 100;
+    height: 30;
+}
+
+#wrapRev:hover {
+    flex-wrap: wrap-reverse;
+}

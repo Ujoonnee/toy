@@ -1,0 +1,169 @@
+<!doctype = html>
+<html style="font-size: 16px;">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="IE=edge">
+        <meta name="author" content="me">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <title>document title here</title>
+    </head>
+    <body>
+        <div class="head">
+            <h1 class="title">headline 1 tag here</h1>
+            <p>p tag for paragraph</p>
+            <h2 class="title">h2 tag here</h2>
+            <p>hr stands for "horizontal rule"</p>
+        </div>
+        <div>
+            <p>space effects <span>only 1 time.</span><br>
+            when making <span>more than 2 space</span>, you have to use entities.<br>
+            nbsp means &nbsp;&nbsp;&nbsp;&nbsp;non breaking space.<br>
+            br tag stands for <span id="break">"break"</span> makes new line.</p>
+            <hr>
+        </div>
+        <div>
+            <h3 class="title">tags</h3>
+            <ol id="list">
+                <li><em>em tag</em> emphasises(italic).<br></li>
+                <li><mark style="color: yellow; background: red">mark tag</mark> paints bg colour of the string.<br><br></li>
+                <li><strong id="strong">bold font</strong>.<br></li>
+            </ol>
+            <br>
+            <ul id="list">
+                <li>tags like p, h1 are called block level elements,<br></li>
+                <li>tags like strong, em, mark are inline tags.<br><br></li>
+            </ul>
+            <hr>
+        </div>
+        <div id="img">
+            <img src="https://searchengineland.com/figz/wp-content/seloads/2015/02/Google-Valentine-Day-logo-2015.png" alt="alternative description here" width="160" height="70" title="tooltip">
+        </div>
+        <div id="anchor">
+            <div id="naver">
+            <a href="http://www.naver.com" target="_blank">
+                <img src="http://cdn.econovill.com/news/photo/201907/368292_267336_3425.jpg" width="150" height="70">
+            </div>
+            </a><br>
+            <a href="http://www.naver.com" target="_blank">target="blank" opens in a new tab</a><br>
+            <a href="mailto:dnwns0933@naver.com" target="_blank">mailto: sends mail</a><br>
+            <a href="tel:01088620306" target="_blank">tel: calls.</a><br>
+        </div>
+        <div id="input">
+            <h2>input types</h2>
+            <input type="button" value="press" style="width: 100; height: 100;"/>
+            <input type="text" maxlength="5" placeholder="placeholder"/>
+            <input type="email" name="useremail"/>
+            <input type="password" name="password" maxlength="5"/>
+            <input type="range" name="volume" max="100" min="0" step="10"/>
+            <input type="checkbox" name="checkbox"/>
+            <input type="radio"/>
+            <input type="color" name="color"/>
+            <input type="date" name="date"/>
+            <input type="month"/>
+            <input type="number" name="number"/>
+            <input type="file"/><br>
+            <select>
+                <option value="default">default</option>
+                <option value="option1">option1</option>
+                <option value="option2">option2</option>
+                <option value="option3">option3</option>
+                <option value="option4">option4 </option>
+            </select>
+            <select multiple>
+                <option value="default">default</option>
+                <option value="option1" selected>option1</option>
+                <option value="option2">option2</option>
+                <option value="option3" selected>option3</option>
+                <option value="option4">option4 </option>
+            </select>
+            <textarea name="textarea" rows="5" cols="20" placeholder="textarea can get more than 1 line.">textarea value attribute</textarea>
+        </div>
+        <div class="floatA"></div>
+        <div class="floatB"></div> 
+        <div class="floatC">float test</div>
+        <div class="floatC">float test</div>
+        <div class="floatC">float test</div>
+        <div class="floatC">float test</div>
+        <div class="floatC">float test</div>
+        <div class="floatC">float test</div>
+        <div class="floatC">float test</div>
+        <div class="floatC">float test</div>
+        
+        <hr>
+
+        <div class="fixed">
+            fixed 
+            fixed 
+            fixed 
+            fixed 
+            fixed 
+        </div>
+        <div class="relative">
+            <span style="color: white;">relative relative relative relative relative relative relative relative relative relative relative relative relative relative relative relative relative relative relative relative relative relative relative relative relative relative</span>
+
+            <div id="rel">top: 150; left: 150;</div>
+        </div>
+        <div class="sticky">
+            sticky 
+            sticky 
+            sticky 
+            sticky 
+        </div>
+        <div class="relative">
+            <span style="color: white;">relative relative relative relative relative relative relative relative relative relative relative relative relative relative relative relative relative relative relative relative</span>
+
+            <div id="abs">top: 150; left: 150;</div>
+        </div>
+
+        <div style="background-color: black; height: 150; margin-bottom: 100;"></div>
+        
+        <div class="flex" id="flexCol">
+            <div id="item">1</div>
+            <div id="item">2</div>
+            <div id="item">3</div>
+        </div>
+
+        <div class="flex" id="flexReCol">
+            <div id="item">1</div>
+            <div id="item">2</div>
+            <div id="item">3</div>
+        </div> 
+
+        <div class="flex" id="flexRow">
+            <div id="item">1</div>
+            <div id="item">2</div>
+            <div id="item">3</div>
+        </div>
+
+        <div class="flex" id="flexReRow">
+            <div id="item">1</div>
+            <div class="self" id="item">2</div>
+            <div id="item">3</div>
+        </div>
+
+        <div class="flex" id="wrap">
+            <div id="wrappedItem">1</div>
+            <div id="wrappedItem">2</div>
+            <div id="wrappedItem">3</div>
+        </div>
+
+        <div class="flex" id="wrapRev">
+            <div id="wrappedItem">1</div>
+            <div id="wrappedItem">2</div>
+            <div id="wrappedItem">3</div>
+            <div id="wrappedItem">4</div>
+            <div id="wrappedItem">5</div>
+            <div id="wrappedItem">6</div>
+            <div id="wrappedItem">7</div>
+        </div>
+
+        <div>
+            <img src="https://bit.ly/30sYeAS">
+            <img src="https://bit.ly/31WXZ1g">
+        </div>
+
+        
+
+    </body>
+</html>
